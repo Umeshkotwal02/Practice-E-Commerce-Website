@@ -1,0 +1,307 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Custom Card and Image Styles */
+.custom-card {
+  width: 100%;
+  height: 400px; /* Fixed card height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fixed-image {
+  width: 100%; 
+  height: 250px;
+  object-fit: contain; 
+  background-color: #f8f9fa; 
+}
+
+.card_body{
+  height: 25%;
+}
+.single-line{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.custom-card .fixed-image {
+  transition: transform 0.8s ease, opacity 0.5s ;
+}
+
+.custom-card:hover .fixed-image {
+  transform: scale(1.10);
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.custom-card:hover .card_body {
+  background-color: #fff3cd;
+}
+.form_container{
+  margin: 7px;
+}
+
+.nav_cart{
+  color: White;
+  font-size: 40px;
+  position: absolute;
+  right: 200px;
+}
+.nav_cart_person{
+  color: White;
+  font-size: 40px;
+  position: absolute;
+  right: 270px;
+}
+
+.btn{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-count {
+  position: absolute;
+  top: -18px;
+  right: -30px; 
+  background-color: red;
+  color: white;
+  border-radius: 80%;
+  padding: 6px 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* Custom Card and Image Styles */
+/* Cart.css */
+.cart-container {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-header {
+  background-color: #e9ecef;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.cart-item-container {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-img {
+  max-width: 80px;
+  max-height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.cart-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.item-price,
+.item-quantity,
+.item-total {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.item-quantity button {
+  width: px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.item-total {
+  color: #28a745;
+}
+
+/* Cart Css End----------------------------- */
+
+.shop-btn{
+  display: flex;
+  justify-content: center;
+}
+.cart-btn{
+display: block;
+}
+.pr-d-btn{
+display: block;
+}
+
+/* Nav Bar Css ----------------------------- */
+.nav_cart {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.cart-badge {
+  margin-left: 3px;
+}
+
+.login{
+  display: inline-flex;
+  align-items: center;
+  margin-left: 5px;  
+}
+
+
+/* Nav Bar Css End --------------------------------------*/
+
+/* Product Details css */
+.product-image {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  background-color: #f8f9fa;
+}
+
+@media (max-width: 576px) {
+  .product-image {
+    max-height: 300px;
+  }
+}
+
+/* Login Container */
+/* General form styling */
+form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form input fields */
+.form-control {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+/* Form labels */
+.form-label {
+  margin-bottom: 5px;
+  font-weight: 600;
+  display: block;
+}
+
+/* Checkbox styling */
+.form-check-label {
+  font-size: 14px;
+  margin-left: 4px;
+}
+
+/* Forgot password link */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Submit button */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Social media buttons */
+.btn-link {
+  color: #495057;
+  font-size: 18px;
+  border: none;
+  transition: color 0.3s ease;
+}
+
+.btn-link:hover {
+  color: #007bff;
+}
+
+/* Alignment for icons */
+.btn-floating i {
+  font-size: 18px;
+}
+
+/* Text center alignment */
+.text-center {
+  text-align: center;
+}
+
+
+.adduserbtn{
+  width: 100px;
+}
+
+/* all button class */
+.btn{
+  align-items: center;
+  width: 150px;
+  margin: 2px;
+  padding: 3px;
+}

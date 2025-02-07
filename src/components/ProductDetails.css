@@ -1,0 +1,89 @@
+.RelatedProductContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.rel-pro-img{
+    width: 100%; 
+    height: 200px;
+    object-fit: contain; 
+    background-color: #f8f9fa;
+    cursor: pointer;
+  }
+
+.pro-img{
+    width: 100%; 
+    height: 500px;
+    object-fit: contain; 
+    background-color: #f8f9fa;
+    cursor: pointer;
+  }
+.productdetails-btn{
+    display: block;
+}
+.productdetails-btn {
+  display: flex;
+  gap: 10px; /* Adjusts space between buttons */
+  margin: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.flipkart-btn {
+  background-color: #2874f0; /* Flipkart blue color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.flipkart-btn:hover {
+  background-color: #1866c2; 
+}
+.productdetails-btn {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; 
+}
+
+.flipkart-btn {
+flex: 2;
+min-width: 100px; 
+padding: 10px 15px;
+border-radius: 5px;
+font-weight: bold;
+cursor: pointer;
+border: none;
+transition: background-color 0.3s;
+}
+
+.add-to-cart {
+background-color: #ff9f00; /* Flipkart blue */
+color: white;
+}
+
+.add-to-cart:hover {
+background-color:#d48806; /* Darker blue on hover */
+}
+
+.buy-now {
+background-color:#fb641b  
+}
+
+.buy-now:hover {
+background-color:  #863106/* Darker orange on hover */
+}
+.related-product-info{
+font-size: larger;
+}
+.main-product{
+    font-size: 20px;
+}
+.view-cart-btn{
+  margin: 30px;
+}
+.cart-btns{
+  margin-left: 30%;
+}
