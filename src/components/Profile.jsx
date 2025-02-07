@@ -9,11 +9,7 @@ const Profile = () => {
 
   const fetchUser = async (userId) => {
     try {
-<<<<<<< HEAD
       const user = JSON.parse(localStorage?.getItem('userData')?? '{}')
-=======
-      const user = JSON.parse(localStorage?.getItem('userData') ?? '{}')
->>>>>>> a79ef64 (update website)
       console.log('user :: ', user)
       const response = await axios.get(
         `https://fakestoreapi.com/users/${user?.id}`

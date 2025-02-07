@@ -45,6 +45,11 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
               <Nav.Link as={Link} to="/product">
                 Product
               </Nav.Link>
+              <Nav.Link as={Link} to="/men">Men</Nav.Link>
+              <Nav.Link as={Link} to="/women">Women</Nav.Link>
+              <Nav.Link as={Link} to="/electronics">Electronics</Nav.Link>
+              <Nav.Link as={Link} to="/jewelery">Jewelery</Nav.Link>
+              <Nav.Link as={Link} to="/beautyproducts">Beauty-Products</Nav.Link>
               <Nav.Link as={Link} to="/about">
                 About Us
               </Nav.Link>
@@ -64,7 +69,7 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
                   </span>
                 </span>
               </Nav.Link>
-              <Nav.Link onClick={handleProfile}>
+              <Nav.Link as={Link} to="/profile">
                 <span className="material-symbols-outlined nav_cart_person">person</span>
               </Nav.Link>
 

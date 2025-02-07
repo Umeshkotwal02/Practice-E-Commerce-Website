@@ -39,14 +39,14 @@ export const UserList = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await("https://fakestoreapi.com/users");
-        
+        const response = await ("https://fakestoreapi.com/users");
+
         if (!response.ok) {
           throw new Error("Failed to fetch users");
         }
-        const data = await response.json();   
+        const data = await response.json();
         console.log(data);
-        
+
         setUsers(data);
       } catch (error) {
         setError(error.message);
@@ -60,11 +60,7 @@ export const UserList = () => {
 
   // Show modal for adding new user
   const addNewUser = () => {
-<<<<<<< HEAD
     setSelectedUser(null); // Clear selected user
-=======
-    setSelectedUser(null);
->>>>>>> a79ef64 (update website)
     setShow(true);
   };
 
@@ -103,7 +99,7 @@ export const UserList = () => {
         },
         phone: newUser.phone,
       });
-  
+
       const createdUser = {
         ...response.data,
         id: users.length + 1, // fallback for id if not provided
@@ -118,7 +114,7 @@ export const UserList = () => {
         email: newUser.email,
         phone: newUser.phone,
       };
-  
+
       setUsers([...users, createdUser]);
       Swal.fire("Success", "User added successfully!", "success");
       handleClose();
@@ -127,7 +123,7 @@ export const UserList = () => {
       Swal.fire("Error", "There was an error adding the user.", "error");
     }
   };
-  
+
 
   // Edit Modal handlers
   const handleEdit = (user) => {
@@ -170,18 +166,18 @@ export const UserList = () => {
         prevUsers.map((user) =>
           user.id === selectedUser.id
             ? {
-                ...user,
-                name: {
-                  firstname: editFormData.firstname,
-                  lastname: editFormData.lastname,
-                },
-                email: editFormData.email,
-                phone: editFormData.phone,
-                address: {
-                  street: editFormData.street,
-                  city: editFormData.city,
-                },
-              }
+              ...user,
+              name: {
+                firstname: editFormData.firstname,
+                lastname: editFormData.lastname,
+              },
+              email: editFormData.email,
+              phone: editFormData.phone,
+              address: {
+                street: editFormData.street,
+                city: editFormData.city,
+              },
+            }
             : user
         )
       );

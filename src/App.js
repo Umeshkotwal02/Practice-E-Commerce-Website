@@ -1,13 +1,8 @@
 import React, { useEffect, useState } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navapp from "./components/Navbar";
-import Product from "./components/Product"; // Correctly import the component
+import Product from "./components/Product";
 import Cart from "./components/Cart";
 import Footer from "./components/Footer";
 import About from "./components/About";
@@ -17,15 +12,11 @@ import UserList from "./components/UserList";
 import Login from "./components/Login";
 import SignUp from "./components/Sign";
 import Profile from "./components/Profile";
-<<<<<<< HEAD
-=======
 import Women from "./components/Women";
 import Men from "./components/Men";
 import Electronics from "./components/Electronics";
 import Jewelery from "./components/Jewelery";
 import Beautyproducts from "./components/Beautyproducts";
->>>>>>> a79ef64 (update website)
-// import ProductCategory from "./components/Product";
 
 function App() {
   // Initialize state from localStorage
@@ -45,25 +36,10 @@ function App() {
         <Route
           path="/login"
           element={
-            isLoggedIn ? (
-<<<<<<< HEAD
-              <Navigate to="/product"/>
-=======
-              <Navigate to="/product" />
->>>>>>> a79ef64 (update website)
-            ) : (
-              <Login setIsLoggedIn={setIsLoggedIn} />
-            )
+            isLoggedIn ? <Navigate to="/product" /> : <Login setIsLoggedIn={setIsLoggedIn} />
           }
         />
-<<<<<<< HEAD
-           <Route
-=======
-        <Route
->>>>>>> a79ef64 (update website)
-          path="/sign"
-          element={<SignUp />}
-        />
+        <Route path="/sign" element={<SignUp />} />
         <Route path="/product" element={<Product />} />
         <Route
           path="/profile"
@@ -74,7 +50,6 @@ function App() {
           element={isLoggedIn ? <Home /> : <Navigate to="/login" />}
         />
         <Route path="/product/:productId" element={<ProductDetails />} />
-        <Route path="/sign" element={<SignUp />} />
         <Route
           path="/about"
           element={isLoggedIn ? <About /> : <Navigate to="/login" />}
@@ -87,8 +62,6 @@ function App() {
           path="/cart"
           element={isLoggedIn ? <Cart /> : <Navigate to="/login" />}
         />
-<<<<<<< HEAD
-=======
         <Route
           path="/women"
           element={isLoggedIn ? <Women /> : <Navigate to="/login" />}
@@ -109,14 +82,10 @@ function App() {
           path="/beautyproducts"
           element={isLoggedIn ? <Beautyproducts /> : <Navigate to="/login" />}
         />
-        <Route
-          path="/profile"
-          element={isLoggedIn ? <Profile /> : <Navigate to="/login" />}
-        />
->>>>>>> a79ef64 (update website)
       </Routes>
       <Footer />
     </Router>
   );
 }
+
 export default App;

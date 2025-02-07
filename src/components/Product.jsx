@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> a79ef64 (update website)
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Container, Row, Col } from "react-bootstrap";
