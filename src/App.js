@@ -42,6 +42,10 @@ function App() {
         <Route path="/sign" element={<SignUp />} />
         <Route path="/product" element={<Product />} />
         <Route
+          path="/"
+          element={isLoggedIn ? <Product /> : <Navigate to="/login" />}
+        />
+        <Route
           path="/profile"
           element={isLoggedIn ? <Profile /> : <Navigate to="/login" />}
         />
